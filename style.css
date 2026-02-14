@@ -118,5 +118,6 @@ tr:nth-child(even) {
 }
 
 body {
-    background-image: url("images/simple.jpg");
+    background-image: url("simple.jpg");
+
 }
