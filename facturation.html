@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Facturation</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Gestion de facturation</h1>
+	</header>
+	<nav>
+		<a href="index.html">Accueil</a>
+		<a href="clients.html">Clients</a>
+		<a href="chambres.html">Chambres</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="facturation.html">Facturation</a>
+	</nav>
+	<form action="index.html" method="get">
+	<section>
+		<h2>Créer une Facture</h2>
+		<form>
+			<label>Nom du client</label>
+			<input type="text" name="Nom du client" required>
+			<label>Numéro de chambre</label>
+			<input type="Number"name="Numéro de chambre"required>
+			<label>Prix par nuit ($)</label>
+			<input type="Number" name="prix" required>
+			<label>Nombre de nuit</label>
+			<input type="Number" name="nuits" required>
+			<label>Montatnt total ($)</label>
+			<input type="text" placeholder="Calcul automatique" readonly>
+
+			<button type="submit">Générer la facture</button>
+		</form>
+	</section>
+	<section style="text-align: center; background: #e8f5e9;" class="message-success">
+		<p>Merci d'avoir utilisé le système de facturation hôtelière chez Hilarius</p>
+		<p><h3>Veuillez nous contacter au numéro +243 815 702 022 s'il y a cas de besoin !</h3></p>
+	</section>
+</body>
+</html>

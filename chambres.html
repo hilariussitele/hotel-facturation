@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gestion des chambres</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Gestion des chambres</h1>
+	</header>
+	<nav>
+	<nav>
+		<a href="index.html">Accueil</a>
+		<a href="clients.html">Clients</a>
+		<a href="chambres.html">Chambres</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="facturation.html">Facturation</a>
+	</nav>
+	<section>
+		<h2>Ajouter une chambre</h2>
+	<!-- ICI LA MODIFICATION IMPORTANTE-->
+		<form action="facturation.html" method="get">
+			<label>Numéro de chambre</label>
+			<input type="number" name="numero_chambre" required>
+			<label>Type de chambre</label>
+			<select name="type_chambre" required>
+				<option value="">--Choisir--</option>
+				<option value="Simple">Simple</option>
+				<option value="Double">Double</option>
+				<option value="Suite">Suite</option>
+			</select>
+			<label>Prix par nuit ($)</label>
+			<input type="number" name="prix_nuit" required>
+
+			<label>Etat</label>
+			<select name="etat" required>
+				<option value="">--Choisir--</option>
+				<option value="Libre">Libre</option>
+				<option value="Occupée">Occupée</option>
+			</select>
+			<button type="submit">Enregistrer</button>
+		</form>
+	</section>
+</body>
+</html>

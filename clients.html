@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Système de facturation hôtel</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Gestion des clients</h1>
+		<nav>
+		<a href="index.html">Accueil</a>
+		<a href="clients.html">Clients</a>
+		<a href="chambres.html">Chambres</a>
+		<a href="galerie.html">Galerie</a>
+		<a href="facturation.html">Facturation</a>
+	</nav> 
+	</header>
+	<section>
+	<h2>Ajouter client</h2>
+	<!-- ICI LA MODIFICATION IMPORTANTE-->
+		<form action="chambres.html" method="get">
+			<label>Nom :</label>
+			<input type="text" required>
+
+			<label>Prénom :</label>
+			<input type="text" required>
+
+			<label>Téléphone :</label>
+			<input type="numeric" name="telephone" pattern="{0-9}*" inputmode="numeric" placeholder="Ex : +243 " required>
+
+			<label>Adresse :</label>
+			<input type="adresse" required>
+
+			<a href="Chambres.html"></a>
+			<button type="submit"> Enregistrer</button>
+		</form>
+	</section>
+</body>
+</html>
