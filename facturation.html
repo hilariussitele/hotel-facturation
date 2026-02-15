@@ -40,4 +40,17 @@
 		<p><h3>Veuillez nous contacter au numéro +243 815 702 022 s'il y a cas de besoin !</h3></p>
 	</section>
 </body>
+<script>
+		function calculerTotal(){
+			let prix =
+			document.getElementById(prix).value;
+			let nuits = 
+			document.getElementById(nuit).value;
+			let total = prix*nuits;
+			documment.getElementById(total).value
+		}
+		document.getElementById(prix).addEventListener("input", calculerTotal);
+		document.getElementById(nuits).addEventListener("input", calculerTotal)
+	</script>
+	<script src="script.js"></script>
 </html>
